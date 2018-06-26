@@ -1,3 +1,6 @@
+//counet -- setup default prop value to 0s
+
+
 class Counter extends React.Component {
 
   
@@ -6,13 +9,13 @@ class Counter extends React.Component {
         this.handleAddOne = this.handleAddOne.bind(this);
         this.handleMinusOne = this.handleMinusOne.bind(this);
         this.resetCounter = this.resetCounter.bind(this);
-        this.state = {
-            count:0
-        };
+          this.state = {
+              count:props.count
+          };
     }
+   
 
     handleAddOne(){
-       
         this.setState((prevState)=>{
             return {
                 count: prevState.count+1
@@ -44,6 +47,8 @@ class Counter extends React.Component {
             </div>);
     }
 }
+Counter.defaultProps = {
+    count: 0
+ };
 
-
-ReactDOM.render(<Counter />, document.getElementById('app'))
+ReactDOM.render(<Counter count='2'/>, document.getElementById('app'))
