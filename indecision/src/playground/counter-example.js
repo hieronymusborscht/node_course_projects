@@ -1,5 +1,3 @@
-//counet -- setup default prop value to 0s
-
 
 class Counter extends React.Component {
 
@@ -49,6 +47,6 @@ class Counter extends React.Component {
 }
 Counter.defaultProps = {
     count: 0
- };
+};
 
 ReactDOM.render(<Counter count='2'/>, document.getElementById('app'))
