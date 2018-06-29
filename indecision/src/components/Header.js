@@ -1,14 +1,14 @@
 import React from 'react';
 
   const Header =(props) =>(
-      <div>
-        <h1>{props.title}</h1>
-        {props.subTitle && <h2>{props.subTitle}</h2>}
+      <div className="header">
+        <h1 className="header__title">{props.title}</h1>
+        {props.subTitle && <h2 className="header__subtitle">{props.subTitle}</h2>}
       </div>
     );
   
   Header.defaultProps = {
-    title: 'Indecision My Buddah',
+    title: 'Indecision My Bruddah',
     subTitle: 'The Robots can not hear you'
   }
   export default Header;

@@ -1,0 +1,32 @@
+
+html{
+    font-size:62.5%;
+    font-family:$base-font;
+}
+body {
+    font-family: $base-font;
+    font-size: $med-size;
+}
+.header-container{
+
+}
+.body-container{
+    background-color:$color-bg;
+    margin:0 $med-size 0 $med-size;
+    padding:0 $med-size 0 $med-size;
+}
+#left-container{
+ display: inline-block;
+ width:50%;
+ background-color:yellowgreen;
+}
+
+#right-container{
+ display: inline-block;
+ width:49%;
+ background-color:yellow;
+}
+
+h1 {
+    font-size: $l-size;
+}
